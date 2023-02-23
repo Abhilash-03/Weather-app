@@ -4,7 +4,7 @@ let weatherCard = document.getElementById("weatherCard")
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": "8f91a2ec37mshb8a3eb990fa7970p179f88jsn5c15d0832a4f",
+    "X-RapidAPI-Key": API_KEY,
     "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
   },
 };
