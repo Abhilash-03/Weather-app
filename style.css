@@ -1,0 +1,102 @@
+
+tr{
+    font-size: large;
+}
+body, #weatherCard{
+    background-color: rgb(92, 73, 213);
+    background-image: url("https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    background-attachment: scroll;
+    background-blend-mode:luminosity;
+}
+th:nth-child(even){
+    color: blueviolet !important;
+    background-color: black !important;
+}
+th:nth-child(odd){
+    color: coral !important;
+    background-color: rgb(90, 53, 164) !important;
+}
+
+td:nth-child(even){
+    background-color: black;
+    color: crimson;
+    font-size: large !important;
+    font-weight: 700;
+}
+td:nth-child(odd){
+    background-color: black;
+    color: gold;
+    font-size: large !important;
+    font-weight: 700;
+}
+.t-heading:nth-child(even){
+    color: blueviolet;
+    background-color: black !important;
+}
+
+a{
+    color: turquoise !important;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    color: blueviolet !important;
+    font-size: 43px !important;
+    margin: 1rem 0;
+    background-color: black;
+    border-radius: 10px;
+    letter-spacing: 1.4;
+    border: 2px solid coral;
+}
+
+#city{
+    color: aquamarine;
+}
+.card{
+    border: 3px solid crimson;
+}
+img{
+    width: 130px;
+    height: 100px;
+    display: inline;
+    position: absolute;
+    left: 3px;
+    top: 0;
+
+}
+
+.card-title{
+    border-radius: 5px;
+}
+
+#weatherCard{
+    padding: 2rem 3rem;
+    background-blend-mode:hard-light;
+
+}
+
+.card-header{
+    font-size: 43px ;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.card-header > p{
+    font-size: 32px;
+}
+h3, h4, h1{
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: cornflowerblue !important;
+}
+ h4>span{
+    color: red !important;
+}
+
+h1{
+    color: orchid !important;
+}
