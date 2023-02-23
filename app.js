@@ -76,6 +76,7 @@ const showData = async (data) => {
 
     showError += `<p class="text-danger fs-4">Something went wrong.</p>`;
     weatherCard.innerHTML = showError;
+    Array.from(td).map((i) => i.innerHTML = 0);
   }
 };
 
