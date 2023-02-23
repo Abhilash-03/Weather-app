@@ -4,7 +4,7 @@ let weatherCard = document.getElementById("weatherCard")
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": API_KEY,
+   
     "X-RapidAPI-Host": "weatherapi-com.p.rapidapi.com",
   },
 };
@@ -12,7 +12,7 @@ const options = {
 const fetchData = async (country) => {
   document.getElementById("city").innerHTML = country.toUpperCase();
 
-  let url = `https://weatherapi-com.p.rapidapi.com/current.json?q=${country}`;
+  let url = `https://weatherapi-com.p.rapidapi.com/current.json?${API_KEY}&q=${country}`;
   try {
     let response = await fetch(url, options);
     let json = await response.json();
