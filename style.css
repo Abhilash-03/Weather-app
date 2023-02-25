@@ -1,15 +1,13 @@
+body{
+    background-color: #1c2346;
+}
 
 tr{
     font-size: large;
 }
-body, #weatherCard{
-    background-color: rgb(92, 73, 213);
-    background-image: url("https://images.pexels.com/photos/1229042/pexels-photo-1229042.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-size: cover;
-    background-attachment: scroll;
-    background-blend-mode:luminosity;
+
+#weatherCard{
+    background-color: black;
 }
 th:nth-child(even){
     color: blueviolet !important;
@@ -51,7 +49,7 @@ a{
     background-color: black;
     border-radius: 10px;
     letter-spacing: 1.4;
-    border: 2px solid coral;
+    border-bottom: 2px solid coral;
 }
 
 #city{
@@ -63,19 +61,15 @@ a{
 img{
     width: 130px;
     height: 100px;
-    display: inline;
-    position: absolute;
-    left: 3px;
-    top: 0;
 
 }
 
 .card-title{
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 #weatherCard{
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
     background-blend-mode:hard-light;
 
 }
@@ -99,4 +93,41 @@ h3, h4, h1{
 
 h1{
     color: orchid !important;
+}
+
+/* Media Query Responsiveness */
+
+@media  screen and (max-width: 478px) {
+    #country, #region{
+        display: none;
+    }
+
+    #countryName{
+        display: block;
+        color: red !important;
+        
+    }
+}
+
+@media  screen and (max-width: 992px){
+    #rowCol h3, h4{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 488px){
+    .heading, #place, #region, .temp{
+        font-size: 26px !important;
+    }
+}
+
+@media screen and (max-width: 333px){
+    .temp, #countryName{
+        font-size: 21px !important;
+    }
+
+    #rowCol h3, h4{
+        font-size: 18px;
+    }
+
 }
